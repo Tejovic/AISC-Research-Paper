@@ -1,3 +1,22 @@
+'''
+This Python code generates a sample dataset representing a time-stamped trajectory of a 
+vehicle, adds random noise to simulate real-world data, and then uses a linear regression 
+model to predict the future positions of the vehicle. It visualizes the observed data and the 
+predicted trajectory through a plot. Here's a concise description of each part:
+Data Generation: It creates a synthetic dataset with time steps, x-coordinates, and ycoordinates, including random noise for variation.
+Model Initialization: A linear regression model is set up for predicting future positions.
+Data Preparation: It reshapes the time steps and assigns y-coordinates for model training.
+Model Training: The linear regression model is trained with the provided data.
+Prediction: Future positions are predicted using the trained model for the next 10-time 
+steps.
+Visualization: It plots the observed data as a scatter plot and the predicted trajectory as a 
+dashed line, labelling the axes and adding a legend.
+Output: It prints the predicted positions for each of the future time steps.
+This code demonstrates a simple linear regression model's capability to predict future 
+positions in a time-series dataset and visualizes the results
+'''
+
+
 import numpy as np  # Importing the NumPy library as np
 from sklearn.linear_model import (
     LinearRegression,
